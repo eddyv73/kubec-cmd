@@ -11,6 +11,9 @@ let configsuffix = "config_"
 let kubeconfigDir = FileManager.default.homeDirectoryForCurrentUser.appendingPathComponent(".kube").appendingPathComponent("config")
 let kubeconfig = FileManager.default.homeDirectoryForCurrentUser.appendingPathComponent(".kube")
 
+//copy target
+let target = "main"
+
 //let kubec = GetKubeconfig()
 print("vanilla :::: ",kubeconfig)
 print("vanilla + ::::::",kubeconfig.path())
@@ -27,7 +30,7 @@ for file in enumerator {
         if file.contains(configsuffix) {
             if !file.contains("bk")
             {
-                print("Config contains ::::file :: ",file)
+//                print("Config contains ::::file :: ",file)
                 ConfigFound.append(file)
             }
             
@@ -63,6 +66,23 @@ for file in ConfigFound {
     } catch let error as NSError {
         print("Ooops! Something went wrong: \(error)")
     }
+}
+
+// delete file .kube/config
+do {
+    try FileManager.default.removeItem(at: kubeconfigDir)
+} catch let error as NSError {
+    print("Ooops! Something went wrong: \(error)")
+}
+
+//copy file .kube/config_ to .kube/config
+
+let source = kubeconfig.appendingPathComponent("config_"+target)
+let destination = kubeconfigDir
+do {
+    try FileManager.default.copyItem(at: source, to: destination)
+} catch let error as NSError {
+    print("Ooops! Something went wrong: \(error)")
 }
 
 
