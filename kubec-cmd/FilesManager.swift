@@ -9,10 +9,14 @@ import Foundation
 
 
 let dir = FileManager.default.homeDirectoryForCurrentUser.appendingPathComponent(".kube").appendingPathComponent("bk")
-
-func SearchFiles()  {
+var _target = ""
+func SearchFiles(target: String )  {
+    _target = target
     CreateBackUpDirectory()
     Makebackup()
+    Clean()
+    SwitcherConfig()
+    
 }
 
 func CreateBackUpDirectory(){
@@ -42,4 +46,49 @@ func Makebackup() {
         }
     }
     
+}
+
+
+func Clean () {
+    //If exist file .kube/config
+    var exist = false
+    if FileManager.default.fileExists(atPath: kubeconfigDir.path) {
+        exist = true
+    }
+
+    // delete file .kube/config
+    if exist{
+        do {
+            try FileManager.default.removeItem(at: kubeconfigDir)
+        } catch let error as NSError {
+            print("Error on Create backup ⚠️")
+        }
+    }
+}
+
+
+//copy file .kube/config_ to .kube/config
+//If exist file .kube/config
+
+func SwitcherConfig() {
+    var existTarget = false
+    if FileManager.default.fileExists(atPath: kubeconfigDir.path+"_"+_target) {
+        print("File exist")
+        existTarget = true
+    }
+
+    if existTarget {
+        let targetfile = "config_"+_target
+        let source = kubeconfig.appendingPathComponent(targetfile)
+        let destination = kubeconfigDir
+        do {
+            try FileManager.default.copyItem(at: source, to: destination)
+        } catch let error as NSError {
+            print("Ooops! Something went wrong: \(error)")
+        }
+        print("Completed ✅")
+    } else
+    {
+        print("Target no exist ❌ " + _target )
+    }
 }
