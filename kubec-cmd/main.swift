@@ -38,7 +38,7 @@ var ConfigFound = [String]()
 for file in enumerator {
     if let file = file as? String {
         if file.contains(configsuffix) {
-            if !file.contains("bk")
+            if !file.contains("bk") && !file.contains(".back")
             {
                 ConfigFound.append(file)
             }
@@ -54,7 +54,7 @@ let dir = FileManager.default.homeDirectoryForCurrentUser.appendingPathComponent
 do {
     try FileManager.default.createDirectory(at: dir, withIntermediateDirectories: true, attributes: nil)
 } catch let error as NSError {
-//    print(error.localizedDescription);
+    print(error.localizedDescription);
 }
 
 
@@ -72,8 +72,6 @@ for file in ConfigFound {
     let destination = dir.appendingPathComponent(file).appendingPathExtension(result)
     do {
         try FileManager.default.copyItem(at: source, to: destination)
-    } catch let error as NSError {
-//        print("Ooops! Something went wrong: \(error)")
     }
 }
 
@@ -88,8 +86,6 @@ if FileManager.default.fileExists(atPath: kubeconfigDir.path) {
 if exist{
     do {
         try FileManager.default.removeItem(at: kubeconfigDir)
-    } catch let error as NSError {
-//        print("Ooops! Something went wrong: \(error)")
     }
 }
 
