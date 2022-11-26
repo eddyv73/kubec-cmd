@@ -7,16 +7,26 @@
 
 import Foundation
 
+
 let configsuffix = "config_"
 let kubeconfigDir = FileManager.default.homeDirectoryForCurrentUser.appendingPathComponent(".kube").appendingPathComponent("config")
 let kubeconfig = FileManager.default.homeDirectoryForCurrentUser.appendingPathComponent(".kube")
 
-//copy target
-let target = "main"
+PrintInstructions()
 
-//let kubec = GetKubeconfig()
-print("vanilla :::: ",kubeconfig)
-print("vanilla + ::::::",kubeconfig.path())
+var target = ""
+let arguments = CommandLine.arguments
+
+if arguments.contains("-t") && arguments.count > 2
+{
+    let targetfile = arguments[2]
+    target = targetfile
+    print("Argument 1: ",arguments[1])
+    print("Argument 2: ",arguments[2])
+    print("target found >>> ",targetfile)
+}
+
+
 
 //get files in path
 let fileManager = FileManager.default
@@ -44,7 +54,7 @@ let dir = FileManager.default.homeDirectoryForCurrentUser.appendingPathComponent
 do {
     try FileManager.default.createDirectory(at: dir, withIntermediateDirectories: true, attributes: nil)
 } catch let error as NSError {
-    print(error.localizedDescription);
+//    print(error.localizedDescription);
 }
 
 
@@ -63,7 +73,7 @@ for file in ConfigFound {
     do {
         try FileManager.default.copyItem(at: source, to: destination)
     } catch let error as NSError {
-        print("Ooops! Something went wrong: \(error)")
+//        print("Ooops! Something went wrong: \(error)")
     }
 }
 
@@ -79,7 +89,7 @@ if exist{
     do {
         try FileManager.default.removeItem(at: kubeconfigDir)
     } catch let error as NSError {
-        print("Ooops! Something went wrong: \(error)")
+//        print("Ooops! Something went wrong: \(error)")
     }
 }
 
@@ -106,7 +116,4 @@ if existTarget {
 {
     print("Target no exist ❌ " + target )
 }
-
-
-
 

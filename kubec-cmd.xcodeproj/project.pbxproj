@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2F03067A291B0A7E00F3C62C /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F030679291B0A7E00F3C62C /* main.swift */; };
+		2F2D0CB729319FE0005FDD2F /* Dirhelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F2D0CB629319FE0005FDD2F /* Dirhelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,7 @@
 /* Begin PBXFileReference section */
 		2F030676291B0A7E00F3C62C /* kubec-cmd */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "kubec-cmd"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F030679291B0A7E00F3C62C /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		2F2D0CB629319FE0005FDD2F /* Dirhelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Dirhelper.swift; path = "kubec-cmd/Dirhelper.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +43,7 @@
 		2F03066D291B0A7E00F3C62C = {
 			isa = PBXGroup;
 			children = (
+				2F2D0CB629319FE0005FDD2F /* Dirhelper.swift */,
 				2F030678291B0A7E00F3C62C /* kubec-cmd */,
 				2F030677291B0A7E00F3C62C /* Products */,
 			);
@@ -121,6 +124,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F03067A291B0A7E00F3C62C /* main.swift in Sources */,
+				2F2D0CB729319FE0005FDD2F /* Dirhelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
