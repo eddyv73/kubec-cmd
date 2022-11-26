@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		2F03067A291B0A7E00F3C62C /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F030679291B0A7E00F3C62C /* main.swift */; };
 		2F2D0CB729319FE0005FDD2F /* Dirhelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F2D0CB629319FE0005FDD2F /* Dirhelper.swift */; };
+		2F2D0CB92931B341005FDD2F /* ArgsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F2D0CB82931B341005FDD2F /* ArgsManager.swift */; };
+		2F2D0CBB2931C2D7005FDD2F /* FilesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F2D0CBA2931C2D7005FDD2F /* FilesManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,6 +29,8 @@
 		2F030676291B0A7E00F3C62C /* kubec-cmd */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "kubec-cmd"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F030679291B0A7E00F3C62C /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		2F2D0CB629319FE0005FDD2F /* Dirhelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Dirhelper.swift; path = "kubec-cmd/Dirhelper.swift"; sourceTree = "<group>"; };
+		2F2D0CB82931B341005FDD2F /* ArgsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArgsManager.swift; sourceTree = "<group>"; };
+		2F2D0CBA2931C2D7005FDD2F /* FilesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilesManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +65,8 @@
 			isa = PBXGroup;
 			children = (
 				2F030679291B0A7E00F3C62C /* main.swift */,
+				2F2D0CB82931B341005FDD2F /* ArgsManager.swift */,
+				2F2D0CBA2931C2D7005FDD2F /* FilesManager.swift */,
 			);
 			path = "kubec-cmd";
 			sourceTree = "<group>";
@@ -123,8 +129,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F2D0CB92931B341005FDD2F /* ArgsManager.swift in Sources */,
 				2F03067A291B0A7E00F3C62C /* main.swift in Sources */,
 				2F2D0CB729319FE0005FDD2F /* Dirhelper.swift in Sources */,
+				2F2D0CBB2931C2D7005FDD2F /* FilesManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
