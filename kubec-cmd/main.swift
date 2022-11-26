@@ -14,16 +14,11 @@ let kubeconfig = FileManager.default.homeDirectoryForCurrentUser.appendingPathCo
 
 PrintInstructions()
 
-var target = ""
-let arguments = CommandLine.arguments
+let target = ArgsController()
 
-if arguments.contains("-t") && arguments.count > 2
+if String(target).isEmpty
 {
-    let targetfile = arguments[2]
-    target = targetfile
-    print("Argument 1: ",arguments[1])
-    print("Argument 2: ",arguments[2])
-    print("target found >>> ",targetfile)
+    print("Fail")
 }
 
 
@@ -42,7 +37,6 @@ for file in enumerator {
             {
                 ConfigFound.append(file)
             }
-            
         }
     }
 }
