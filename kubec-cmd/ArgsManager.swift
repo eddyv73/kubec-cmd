@@ -19,9 +19,9 @@ func ArgsController () -> String{
     {
         let targetfile = arguments[2]
         target = targetfile
-        print("Argument 1: ",arguments[1])
-        print("Argument 2: ",arguments[2])
-        print("target found >>> ",targetfile)
+        print("Argument 1 ↪︎ ",arguments[1])
+        print("Argument 2 ↪︎ ",arguments[2])
+        print("Target found ➥",targetfile)
     }
     return target
 }

@@ -9,7 +9,11 @@ import Foundation
 
 func PrintInstructions( )
 {
-    print("Kubec-cmd")
-    print("version 1")
-    print("Runner")
+    print("Kubec-cmd ⛴️")
+    print("Formula ∑ : V1 ⚛️")
+    print("🛠️---------------------------------🛠️")
+    print("Target file 🎯: kubec-cmd -t 'subfix'")
+    print("🛠️---------------------------------🛠️")
+    print("Place Target file ℹ️ : config_'subfix'")
+    print("🛠️---------------------------------🛠️")
 }
