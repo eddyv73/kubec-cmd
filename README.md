@@ -1,6 +1,6 @@
 # kubec-cmd
 
-# Info
+## Info
 Administra y rota archivos de configuración de Kubernetes en la carpeta .kube con copias de seguridad y cambios eficientes
 
 ## Descripción general del programa
