@@ -1,4 +1,3 @@
-//
 //  FilesManager.swift
 //  kubec-cmd
 //
@@ -7,11 +6,13 @@
 
 import Foundation
 
-
 let dir = FileManager.default.homeDirectoryForCurrentUser.appendingPathComponent(".kube").appendingPathComponent("bk")
 var _target = ""
-func SearchFiles(target: String )  {
+var _context = ""
+
+func SearchFiles(target: String, context: String)  {
     _target = target
+    _context = context
     CreateBackUpDirectory()
     Makebackup()
     Clean()
@@ -48,7 +49,6 @@ func Makebackup() {
     
 }
 
-
 func Clean () {
     //If exist file .kube/config
     var exist = false
@@ -65,7 +65,6 @@ func Clean () {
         }
     }
 }
-
 
 //copy file .kube/config_ to .kube/config
 //If exist file .kube/config
@@ -87,6 +86,17 @@ func SwitcherConfig() {
             print("Ooops! Something went wrong: \(error)")
         }
         print("Completed ✅")
+
+        // Cambia el contexto si se especificó
+        if !_context.isEmpty {
+            let changeContextCommand = "kubectl config use-context \(_context)"
+            let task = Process()
+            task.launchPath = "/bin/bash"
+            task.arguments = ["-c", changeContextCommand]
+            task.launch()
+            task.waitUntilExit()
+            print("Context switched to: \(_context)")
+        }
     } else
     {
         print("Target no exist ❌ " + _target )
