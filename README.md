@@ -1,45 +1,49 @@
 # kubec-cmd
 
 ## Info
-Administra y rota archivos de configuración de Kubernetes en la carpeta .kube con copias de seguridad y cambios eficientes
+Manage and rotate Kubernetes configuration files in the .kube folder with efficient backups and changes.
 
-## Descripción general del programa
+## Program overview
 
-kubec-cmd tiene como objetivo ayudar a los usuarios a rotar y administrar archivos de configuración de Kubernetes en la carpeta `.kube`. El código se divide en varios archivos Swift, que trabajan juntos para lograr esta funcionalidad:
+kubec-cmd aims to help users rotate and manage Kubernetes configuration files in the `.kube` folder. The code is divided into several Swift files, which work together to achieve this functionality:
 
-1. **main.swift**: Este es el punto de entrada del programa, donde se imprimen las instrucciones para el usuario, se procesan los argumentos de la línea de comandos utilizando la función `ArgsController()` y se enumeran los archivos de configuración en la carpeta `.kube`. Finalmente, se llama a la función `SearchFiles(target: String)` con el sufijo del archivo de configuración deseado.
+1. **main.swift**: This is the entry point of the program, where the instructions for the user are printed, the command line arguments are processed using the `ArgsController()` function, and the configuration files in the `.kube` folder are listed. Finally, the `SearchFiles(target: String)` function is called with the desired configuration file suffix.
 
-2. **ArgsManager.swift**: Este archivo contiene la función `ArgsController()`, que procesa los argumentos de la línea de comandos para obtener el sufijo del archivo de configuración deseado. Si se encuentra el argumento "-t" y hay al menos un argumento adicional, la función devuelve el sufijo proporcionado; de lo contrario, devuelve una cadena vacía.
+2. **ArgsManager.swift**: This file contains the `ArgsController()` function, which processes the command line arguments to obtain the desired configuration file suffix. If the "-t" argument is found and there is at least one additional argument, the function returns the provided suffix; otherwise, it returns an empty string.
 
-3. **Dirhelper.swift**: Este archivo contiene la función `PrintInstructions()`, que se encarga de imprimir las instrucciones de uso para el programa `kubec-cmd`.
+3. **Dirhelper.swift**: This file contains the `PrintInstructions()` function, which is responsible for printing the usage instructions for the `kubec-cmd` program.
 
-4. **FilesManager.swift**: Este archivo contiene varias funciones relacionadas con la gestión de archivos y directorios en el contexto de rotar archivos de configuración de Kubernetes en la carpeta `.kube`. Estas funciones realizan las siguientes acciones:
+4. **FilesManager.swift**: This file contains several functions related to file and directory management in the context of rotating Kubernetes configuration files in the `.kube` folder. These functions perform the following actions:
 
-   a. Crear un directorio de respaldo para los archivos de configuración (`CreateBackUpDirectory()`).
+   a. Create a backup directory for the configuration files (`CreateBackUpDirectory()`).
    
-   b. Realizar una copia de seguridad de los archivos de configuración existentes (`Makebackup()`).
+   b. Make a backup of the existing configuration files (`Makebackup()`).
    
-   c. Eliminar el archivo de configuración actual (`Clean()`).
+   c. Remove the current configuration file (`Clean()`).
    
-   d. Cambiar el archivo de configuración actual al archivo de configuración con el sufijo `_target` proporcionado (`SwitcherConfig()`).
+   d. Change the current configuration file to the configuration file with the provided `_target` suffix (`SwitcherConfig()`).
 
-Este comando copia el archivo `config_remote` en la carpeta `.kube` y lo establece como el archivo de configuración activo.
+This command copies the `config_remote` file into the `.kube` folder and sets it as the active configuration file.
 
-**Nota**: Asegúrate de tener los archivos `config_main`, `config_local`, `config_remote`, etc., en la carpeta `.kube` antes de ejecutar los comandos anteriores.
-Como usar
+**Note**: Make sure you have the `config_main`, `config_local`, `config_remote`, etc., files in the `.kube` folder before running the commands above.
 
-Suponiendo que tienes los siguientes archivos en `.kube`
+## How to use
 
-./kube/config_main
-./kube/config_repo
+Assuming you have the following files in `.kube`:
 
-para establecer como repo el archivo en config, puedes utilizar el siguiente comando
+- `./kube/config_main`
+- `./kube/config_repo`
+
+To set the `config_repo` file as the active configuration, you can use the following command:
+
 ```bash
- kubec-cmd -t repo
- ``` 
- esto buscara el archivo
- 
+kubec-cmd -t repo
+```
+
+This will search for the file:
 ./kube/config_repo
 
-y lo establecera como el config el cual utiliza el kubectl
-En resumen, este programa en Swift permite a los usuarios cambiar fácilmente entre diferentes archivos de configuración de Kubernetes, haciendo que el proceso de rotación de archivos de configuración sea más eficiente y seguro.
+
+And set it as the active configuration file used by kubectl.
+
+In summary,  kubec-cmd allows users to easily switch between different Kubernetes configuration files, making the configuration file rotation process more efficient and secure.
