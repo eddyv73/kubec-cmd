@@ -28,7 +28,8 @@ Este comando copia el archivo `config_remote` en la carpeta `.kube` y lo estable
 **Nota**: Asegúrate de tener los archivos `config_main`, `config_local`, `config_remote`, etc., en la carpeta `.kube` antes de ejecutar los comandos anteriores.
 Como usar
 
-si en tu directorio tienes los siguientes archivos
+Suponiendo que tienes los siguientes archivos en `.kube`
+
 ./kube/config_main
 ./kube/config_repo
 
