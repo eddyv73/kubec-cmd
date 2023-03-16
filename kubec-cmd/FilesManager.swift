@@ -89,10 +89,10 @@ func SwitcherConfig() {
 
         // Cambia el contexto si se especificó
         if !_context.isEmpty {
-            let changeContextCommand = "kubectl config use-context \(_context)"
+            let changeContextCommand = "config use-context \(_context)"
             let task = Process()
-            task.launchPath = "/bin/bash"
-            task.arguments = ["-c", changeContextCommand]
+            task.launchPath = "/opt/homebrew/bin/kubectl"
+            task.arguments = [changeContextCommand]
             task.launch()
             task.waitUntilExit()
             print("Context switched to: \(_context)")

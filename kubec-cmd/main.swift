@@ -13,10 +13,11 @@ let kubeconfig = FileManager.default.homeDirectoryForCurrentUser.appendingPathCo
 PrintInstructions()
 
 // Modified to handle both target and context arguments
-let (target, context) = ArgsController()
+let args = ArgsController()
+let target = args.target
+let context = args.context
 
-if String(target).isEmpty
-{
+if target.isEmpty {
     print("Fail")
 }
 
