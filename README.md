@@ -1,5 +1,5 @@
 # kubec-cmd
-
+[![Xcode](https://github.com/eddyv73/kubec-cmd/actions/workflows/swift.yml/badge.svg)](https://github.com/eddyv73/kubec-cmd/actions/workflows/swift.yml)
 ## Info
 Manage and rotate Kubernetes configuration files in the .kube folder with efficient backups and changes.
 
