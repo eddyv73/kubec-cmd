@@ -1,6 +1,5 @@
 # This workflow will build a Swift project
 # For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-swift
-
 name: Swift
 
 on:
@@ -18,5 +17,7 @@ jobs:
     - uses: actions/checkout@v3
     - name: Build
       run: swift build -v
+      working-directory: kubec-cmd
     - name: Run tests
       run: swift test -v
+      working-directory: kubec-cmd
