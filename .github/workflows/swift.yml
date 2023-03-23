@@ -1,6 +1,4 @@
-# This workflow will build a Swift project
-# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-swift
-name: Swift
+name: Xcode
 
 on:
   push:
@@ -16,8 +14,6 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build
-      run: swift build -v
-      working-directory: /
+      run: xcodebuild -project kubec-cmd.xcodeproj -scheme 'kubec-cmd' -configuration Release build | xcpretty
     - name: Run tests
-      run: swift test -v
-      working-directory: /
+      run: xcodebuild -project kubec-cmd.xcodeproj -scheme 'kubec-cmd' -configuration Debug test | xcpretty
