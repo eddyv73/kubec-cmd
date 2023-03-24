@@ -17,9 +17,6 @@ jobs:
       run: xcodebuild -project kubec-cmd.xcodeproj -scheme 'kubec-cmd' -configuration Release build -derivedDataPath DerivedData | xcpretty
     - name: Run tests
       run: xcodebuild -project kubec-cmd.xcodeproj -scheme 'kubec-cmd' -configuration Debug test | xcpretty
-    - name: Archive binary
-      run: |
-        cp DerivedData/Build/Products/Release/kubec-cmd/kubec-cmd.bin
     - name: Upload binary
       uses: actions/upload-artifact@v2
       with:
