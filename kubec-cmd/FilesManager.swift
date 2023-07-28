@@ -53,7 +53,7 @@ func Makebackup() {
         let destination = dirbk.appendingPathComponent(file).appendingPathExtension(result)
         do {
             try FileManager.default.copyItem(at: source, to: destination)
-        } catch let error as NSError {
+        } catch _ as NSError {
             print("Error on Create backup ⚠️")
         }
     }
@@ -71,7 +71,7 @@ func Clean () {
     if exist{
         do {
             try FileManager.default.removeItem(at: kubeconfigDir)
-        } catch let error as NSError {
+        } catch _ as NSError {
             print("Error on Create backup ⚠️")
         }
     }
