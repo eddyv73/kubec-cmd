@@ -80,7 +80,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "19"
             endingLineNumber = "19"
-            landmarkName = "SearchFiles(target:)"
+            landmarkName = "SearchFiles(target:context:)"
             landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>
@@ -88,7 +88,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "28873129-027B-4C39-8135-CFE772E41BB4"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "kubec-cmd/FilesManager.swift"
@@ -96,7 +96,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "101"
             endingLineNumber = "101"
-            landmarkName = "listfilesinpath()"
+            landmarkName = "SwitcherConfig()"
             landmarkType = "9">
             <Locations>
                <Location
@@ -159,6 +159,21 @@
                   endingLineNumber = "101"
                   offsetFromSymbolStart = "608">
                </Location>
+               <Location
+                  uuid = "28873129-027B-4C39-8135-CFE772E41BB4 - 4a9c5016e4236e7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "kubec_cmd.SwitcherConfig() -&gt; ()"
+                  moduleName = "kubec-cmd"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/eddywister/Projects/Repos/kubec-cmd/kubec-cmd/FilesManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "102"
+                  endingLineNumber = "102"
+                  offsetFromSymbolStart = "2856">
+               </Location>
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
@@ -174,8 +189,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "105"
             endingLineNumber = "105"
-            landmarkName = "listfilesinpath()"
-            landmarkType = "9">
+            landmarkName = "unknown"
+            landmarkType = "0">
             <Locations>
                <Location
                   uuid = "F8ADF6F4-B23C-4743-B4EF-5DC8F07A900A - 9f0e14c3649430b3"
