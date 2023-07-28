@@ -37,5 +37,5 @@ func ArgsController() -> Args {
         PrintInstructions()
     }
     
-    return target
+    return args
 }

@@ -113,7 +113,6 @@ func listfilesinpath () -> [String]
     for file in enumerator {
         if let file = file as? String {
             if file.contains(configsuffix) {
-//                if !file.contains("bk") && !file.contains(".back") && !file.contains(".0") && !file.contains(".1") && !file.contains(".2") && !file.contains(".3") {
                 if !file.contains("bk") && !file.contains(".back") && file.contains("config_") {
                 ConfigFound.append(file)
                 }

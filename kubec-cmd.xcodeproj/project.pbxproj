@@ -7,15 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2F0235762A531F8F00A835C2 /* linuxApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0235752A531F8F00A835C2 /* linuxApp.swift */; };
-		2F0235782A531F8F00A835C2 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0235772A531F8F00A835C2 /* Persistence.swift */; };
-		2F02357B2A531F8F00A835C2 /* linux.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2F0235792A531F8F00A835C2 /* linux.xcdatamodeld */; };
-		2F02357D2A531F8F00A835C2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F02357C2A531F8F00A835C2 /* ContentView.swift */; };
-		2F02357F2A531F9000A835C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F02357E2A531F9000A835C2 /* Assets.xcassets */; };
-		2F0235832A531F9000A835C2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F0235822A531F9000A835C2 /* Preview Assets.xcassets */; };
-		2F02358D2A531F9000A835C2 /* linuxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F02358C2A531F9000A835C2 /* linuxTests.swift */; };
-		2F0235972A531F9000A835C2 /* linuxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0235962A531F9000A835C2 /* linuxUITests.swift */; };
-		2F0235992A531F9000A835C2 /* linuxUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0235982A531F9000A835C2 /* linuxUITestsLaunchTests.swift */; };
 		2F03067A291B0A7E00F3C62C /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F030679291B0A7E00F3C62C /* main.swift */; };
 		2F2D0CB729319FE0005FDD2F /* Dirhelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F2D0CB629319FE0005FDD2F /* Dirhelper.swift */; };
 		2F2D0CB92931B341005FDD2F /* ArgsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F2D0CB82931B341005FDD2F /* ArgsManager.swift */; };
@@ -53,18 +44,8 @@
 
 /* Begin PBXFileReference section */
 		2F0235732A531F8F00A835C2 /* linux.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = linux.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		2F0235752A531F8F00A835C2 /* linuxApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = linuxApp.swift; sourceTree = "<group>"; };
-		2F0235772A531F8F00A835C2 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
-		2F02357A2A531F8F00A835C2 /* linux.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = linux.xcdatamodel; sourceTree = "<group>"; };
-		2F02357C2A531F8F00A835C2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		2F02357E2A531F9000A835C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		2F0235802A531F9000A835C2 /* linux.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = linux.entitlements; sourceTree = "<group>"; };
-		2F0235822A531F9000A835C2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2F0235882A531F9000A835C2 /* linuxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = linuxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2F02358C2A531F9000A835C2 /* linuxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = linuxTests.swift; sourceTree = "<group>"; };
 		2F0235922A531F9000A835C2 /* linuxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = linuxUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2F0235962A531F9000A835C2 /* linuxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = linuxUITests.swift; sourceTree = "<group>"; };
-		2F0235982A531F9000A835C2 /* linuxUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = linuxUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		2F030676291B0A7E00F3C62C /* kubec-cmd */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "kubec-cmd"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F030679291B0A7E00F3C62C /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		2F2D0CB629319FE0005FDD2F /* Dirhelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Dirhelper.swift; path = "kubec-cmd/Dirhelper.swift"; sourceTree = "<group>"; };
@@ -104,53 +85,11 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2F0235742A531F8F00A835C2 /* linux */ = {
-			isa = PBXGroup;
-			children = (
-				2F0235752A531F8F00A835C2 /* linuxApp.swift */,
-				2F0235772A531F8F00A835C2 /* Persistence.swift */,
-				2F02357C2A531F8F00A835C2 /* ContentView.swift */,
-				2F02357E2A531F9000A835C2 /* Assets.xcassets */,
-				2F0235802A531F9000A835C2 /* linux.entitlements */,
-				2F0235792A531F8F00A835C2 /* linux.xcdatamodeld */,
-				2F0235812A531F9000A835C2 /* Preview Content */,
-			);
-			path = linux;
-			sourceTree = "<group>";
-		};
-		2F0235812A531F9000A835C2 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				2F0235822A531F9000A835C2 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		2F02358B2A531F9000A835C2 /* linuxTests */ = {
-			isa = PBXGroup;
-			children = (
-				2F02358C2A531F9000A835C2 /* linuxTests.swift */,
-			);
-			path = linuxTests;
-			sourceTree = "<group>";
-		};
-		2F0235952A531F9000A835C2 /* linuxUITests */ = {
-			isa = PBXGroup;
-			children = (
-				2F0235962A531F9000A835C2 /* linuxUITests.swift */,
-				2F0235982A531F9000A835C2 /* linuxUITestsLaunchTests.swift */,
-			);
-			path = linuxUITests;
-			sourceTree = "<group>";
-		};
 		2F03066D291B0A7E00F3C62C = {
 			isa = PBXGroup;
 			children = (
 				2F2D0CB629319FE0005FDD2F /* Dirhelper.swift */,
 				2F030678291B0A7E00F3C62C /* kubec-cmd */,
-				2F0235742A531F8F00A835C2 /* linux */,
-				2F02358B2A531F9000A835C2 /* linuxTests */,
-				2F0235952A531F9000A835C2 /* linuxUITests */,
 				2F030677291B0A7E00F3C62C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -301,8 +240,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F0235832A531F9000A835C2 /* Preview Assets.xcassets in Resources */,
-				2F02357F2A531F9000A835C2 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,10 +264,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F0235762A531F8F00A835C2 /* linuxApp.swift in Sources */,
-				2F0235782A531F8F00A835C2 /* Persistence.swift in Sources */,
-				2F02357D2A531F8F00A835C2 /* ContentView.swift in Sources */,
-				2F02357B2A531F8F00A835C2 /* linux.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,7 +271,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F02358D2A531F9000A835C2 /* linuxTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,8 +278,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F0235972A531F9000A835C2 /* linuxUITests.swift in Sources */,
-				2F0235992A531F9000A835C2 /* linuxUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -457,7 +387,6 @@
 		2F02359E2A531F9000A835C2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -480,7 +409,6 @@
 		2F02359F2A531F9000A835C2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -504,7 +432,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3HC7295HS9;
@@ -528,7 +455,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3HC7295HS9;
@@ -734,19 +660,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		2F0235792A531F8F00A835C2 /* linux.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				2F02357A2A531F8F00A835C2 /* linux.xcdatamodel */,
-			);
-			currentVersion = 2F02357A2A531F8F00A835C2 /* linux.xcdatamodel */;
-			path = linux.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 2F03066E291B0A7E00F3C62C /* Project object */;
 }

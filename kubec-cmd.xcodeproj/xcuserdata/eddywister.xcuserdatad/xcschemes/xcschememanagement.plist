@@ -4,15 +4,22 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>kubec-cmd.xcscheme_^#shared#^_</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>0</integer>
-		</dict>
-		<key>linux.xcscheme_^#shared#^_</key>
+		<key>kubec-cmd --list.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>1</integer>
+		</dict>
+		<key>kubec-cmd -t.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>kubec-cmd.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>0</integer>
 		</dict>
 		<key>unix.xcscheme_^#shared#^_</key>
 		<dict>
@@ -22,14 +29,21 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>2F030675291B0A7E00F3C62C</key>
+		<key>2F0235722A531F8F00A835C2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-	</dict>
-	<key>SuppressBuildableAutocreation</key>
-	<dict>
+		<key>2F0235872A531F9000A835C2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2F0235912A531F9000A835C2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>2F030675291B0A7E00F3C62C</key>
 		<dict>
 			<key>primary</key>
