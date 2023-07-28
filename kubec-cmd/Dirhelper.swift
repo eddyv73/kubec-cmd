@@ -17,3 +17,4 @@ func PrintInstructions() {
     print("Using a specific context 📝: kubec-cmd -t 'subfix' -c 'context'")
     print("🛠️---------------------------------------------------------------------------------------------------🛠️")
 }
+

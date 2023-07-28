@@ -72,7 +72,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "DDA7B181-893A-47E6-9CF0-4E876A0270A9"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "kubec-cmd/FilesManager.swift"
@@ -80,8 +80,149 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "19"
             endingLineNumber = "19"
-            landmarkName = "SearchFiles(target:context:)"
+            landmarkName = "SearchFiles(target:)"
             landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "28873129-027B-4C39-8135-CFE772E41BB4"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "kubec-cmd/FilesManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "101"
+            endingLineNumber = "101"
+            landmarkName = "listfilesinpath()"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "28873129-027B-4C39-8135-CFE772E41BB4 - 9f0e14c364943137"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "kubec_cmd.listfilesinpath() -&gt; Swift.Array&lt;Swift.String&gt;"
+                  moduleName = "kubec-cmd"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/eddywister/Projects/Repos/kubec-cmd/kubec-cmd/FilesManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "100"
+                  endingLineNumber = "100"
+                  offsetFromSymbolStart = "344">
+               </Location>
+               <Location
+                  uuid = "28873129-027B-4C39-8135-CFE772E41BB4 - 9f0e14c364943137"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "kubec_cmd.listfilesinpath() -&gt; Swift.Array&lt;Swift.String&gt;"
+                  moduleName = "kubec-cmd"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/eddywister/Projects/Repos/kubec-cmd/kubec-cmd/FilesManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "100"
+                  endingLineNumber = "100"
+                  offsetFromSymbolStart = "316">
+               </Location>
+               <Location
+                  uuid = "28873129-027B-4C39-8135-CFE772E41BB4 - 9f0e14c3649430d0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "kubec_cmd.listfilesinpath() -&gt; Swift.Array&lt;Swift.String&gt;"
+                  moduleName = "kubec-cmd"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/eddywister/Projects/Repos/kubec-cmd/kubec-cmd/FilesManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "101"
+                  endingLineNumber = "101"
+                  offsetFromSymbolStart = "420">
+               </Location>
+               <Location
+                  uuid = "28873129-027B-4C39-8135-CFE772E41BB4 - 9f0e14c3649430d0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "kubec_cmd.listfilesinpath() -&gt; Swift.Array&lt;Swift.String&gt;"
+                  moduleName = "kubec-cmd"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/eddywister/Projects/Repos/kubec-cmd/kubec-cmd/FilesManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "101"
+                  endingLineNumber = "101"
+                  offsetFromSymbolStart = "608">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F8ADF6F4-B23C-4743-B4EF-5DC8F07A900A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "kubec-cmd/FilesManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "105"
+            endingLineNumber = "105"
+            landmarkName = "listfilesinpath()"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "F8ADF6F4-B23C-4743-B4EF-5DC8F07A900A - 9f0e14c3649430b3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "kubec_cmd.listfilesinpath() -&gt; Swift.Array&lt;Swift.String&gt;"
+                  moduleName = "kubec-cmd"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/eddywister/Projects/Repos/kubec-cmd/kubec-cmd/FilesManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "104"
+                  endingLineNumber = "104"
+                  offsetFromSymbolStart = "880">
+               </Location>
+               <Location
+                  uuid = "F8ADF6F4-B23C-4743-B4EF-5DC8F07A900A - 9f0e14c36494306c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "kubec_cmd.listfilesinpath() -&gt; Swift.Array&lt;Swift.String&gt;"
+                  moduleName = "kubec-cmd"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/eddywister/Projects/Repos/kubec-cmd/kubec-cmd/FilesManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "105"
+                  endingLineNumber = "105"
+                  offsetFromSymbolStart = "976">
+               </Location>
+               <Location
+                  uuid = "F8ADF6F4-B23C-4743-B4EF-5DC8F07A900A - 9f0e14c36494306c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "kubec_cmd.listfilesinpath() -&gt; Swift.Array&lt;Swift.String&gt;"
+                  moduleName = "kubec-cmd"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/eddywister/Projects/Repos/kubec-cmd/kubec-cmd/FilesManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "105"
+                  endingLineNumber = "105"
+                  offsetFromSymbolStart = "1100">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

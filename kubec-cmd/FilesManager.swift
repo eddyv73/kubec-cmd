@@ -102,3 +102,23 @@ func SwitcherConfig() {
         print("Target no exist ❌ " + _target )
     }
 }
+
+//list all config files in path
+func listfilesinpath () -> [String]
+{
+    let home = FileManager.default.homeDirectoryForCurrentUser.appendingPathComponent(".kube").path();
+    let fileManager = FileManager.default
+    let enumerator:FileManager.DirectoryEnumerator = fileManager.enumerator(atPath: home)!
+    var ConfigFound = [String]()
+    for file in enumerator {
+        if let file = file as? String {
+            if file.contains(configsuffix) {
+//                if !file.contains("bk") && !file.contains(".back") && !file.contains(".0") && !file.contains(".1") && !file.contains(".2") && !file.contains(".3") {
+                if !file.contains("bk") && !file.contains(".back") && file.contains("config_") {
+                ConfigFound.append(file)
+                }
+            }
+        }
+    }
+    return ConfigFound
+}
