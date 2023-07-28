@@ -11,6 +11,7 @@
 		2F2D0CB729319FE0005FDD2F /* Dirhelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F2D0CB629319FE0005FDD2F /* Dirhelper.swift */; };
 		2F2D0CB92931B341005FDD2F /* ArgsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F2D0CB82931B341005FDD2F /* ArgsManager.swift */; };
 		2F2D0CBB2931C2D7005FDD2F /* FilesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F2D0CBA2931C2D7005FDD2F /* FilesManager.swift */; };
+		2FA295C62A7460480002F584 /* KubeConfigList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA295C52A7460480002F584 /* KubeConfigList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		2F2D0CB629319FE0005FDD2F /* Dirhelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Dirhelper.swift; path = "kubec-cmd/Dirhelper.swift"; sourceTree = "<group>"; };
 		2F2D0CB82931B341005FDD2F /* ArgsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArgsManager.swift; sourceTree = "<group>"; };
 		2F2D0CBA2931C2D7005FDD2F /* FilesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilesManager.swift; sourceTree = "<group>"; };
+		2FA295C52A7460480002F584 /* KubeConfigList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KubeConfigList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 		2F03066D291B0A7E00F3C62C = {
 			isa = PBXGroup;
 			children = (
+				2FA295C52A7460480002F584 /* KubeConfigList.swift */,
 				2F2D0CB629319FE0005FDD2F /* Dirhelper.swift */,
 				2F030678291B0A7E00F3C62C /* kubec-cmd */,
 				2F030677291B0A7E00F3C62C /* Products */,
@@ -287,6 +290,7 @@
 			files = (
 				2F2D0CB92931B341005FDD2F /* ArgsManager.swift in Sources */,
 				2F03067A291B0A7E00F3C62C /* main.swift in Sources */,
+				2FA295C62A7460480002F584 /* KubeConfigList.swift in Sources */,
 				2F2D0CB729319FE0005FDD2F /* Dirhelper.swift in Sources */,
 				2F2D0CBB2931C2D7005FDD2F /* FilesManager.swift in Sources */,
 			);
