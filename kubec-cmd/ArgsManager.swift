@@ -1,4 +1,3 @@
-//
 //  ArgsManager.swift
 //  kubec-cmd
 //
@@ -7,21 +6,41 @@
 
 import Foundation
 
-
-
-
-func ArgsController () -> String{
-    
-    var target = ""
-    let arguments = CommandLine.arguments
-
-    if arguments.contains("-t") && arguments.count > 2
-    {
-        let targetfile = arguments[2]
-        target = targetfile
-        print("Argument 1 ↪︎ ",arguments[1])
-        print("Argument 2 ↪︎ ",arguments[2])
-        print("Target found ➥",targetfile)
-    }
-    return target
+struct Args {
+    var target: String = ""
+    var context: String = ""
 }
+
+func ArgsController() -> Args {
+    var args = Args()
+    let arguments = CommandLine.arguments
+    
+    if let targetIndex = arguments.firstIndex(of: "-t"), arguments.count > targetIndex + 1 {
+        let targetFile = arguments[targetIndex + 1]
+        args.target = targetFile
+        //only for debug
+//        print("Argument 1 ↪︎ ", arguments[targetIndex])
+//        print("Argument 2 ↪︎ ", arguments[targetIndex + 1])
+        print("Target found ➥", targetFile)
+        SearchFiles(target: args.target, context: args.context)
+    }
+    else if arguments.contains("--list")
+    {
+        let files = listfilesinpath()
+        print("List of files in path: ",kubeconfig.path.description)
+        for file in files {
+            print(file)
+        }
+    }
+    else
+    {
+        print("No target file found")
+        PrintInstructions()
+    }
+    
+    return args
+}
+
+
+
+

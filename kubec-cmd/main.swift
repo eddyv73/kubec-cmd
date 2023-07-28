@@ -1,4 +1,3 @@
-//
 //  main.swift
 //  kubec-cmd
 //
@@ -7,41 +6,18 @@
 
 import Foundation
 
-
 let configsuffix = "config_"
 let kubeconfigDir = FileManager.default.homeDirectoryForCurrentUser.appendingPathComponent(".kube").appendingPathComponent("config")
 let kubeconfig = FileManager.default.homeDirectoryForCurrentUser.appendingPathComponent(".kube")
-
-PrintInstructions()
-
-let target = ArgsController()
-
-if String(target).isEmpty
-{
-    print("Fail")
-}
-
-
-//get files in path
+let dirbk = FileManager.default.homeDirectoryForCurrentUser.appendingPathComponent(".kube").appendingPathComponent("bk")
+var _target = ""
+var _context = ""
+var ConfigFound = [String]()
 let fileManager = FileManager.default
 let enumerator:FileManager.DirectoryEnumerator = fileManager.enumerator(atPath: kubeconfig.path())!
+PrintInstructions()
 
-// list of string
-var ConfigFound = [String]()
-//Select confifiles
-for file in enumerator {
-    if let file = file as? String {
-        if file.contains(configsuffix) {
-            if !file.contains("bk") && !file.contains(".back")
-            {
-                ConfigFound.append(file)
-            }
-        }
-    }
-}
-
-SearchFiles(target: target)
-
-
+// Modified to handle both target and context arguments
+let args = ArgsController()
 
 
