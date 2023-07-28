@@ -21,12 +21,12 @@ func ArgsController() -> Args {
         print("Argument 1 ↪︎ ", arguments[targetIndex])
         print("Argument 2 ↪︎ ", arguments[targetIndex + 1])
         print("Target found ➥", targetFile)
+        SearchFiles(target: args.target, context: args.context)
     }
-    //new arg --list using this method listfilesinpath()
     else if arguments.contains("--list")
     {
         let files = listfilesinpath()
-        print("List of files in path: ",kubeconfig)
+        print("List of files in path: ",kubeconfig.path.description)
         for file in files {
             print(file)
         }
@@ -39,3 +39,7 @@ func ArgsController() -> Args {
     
     return args
 }
+
+
+
+

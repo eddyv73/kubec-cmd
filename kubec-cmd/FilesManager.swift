@@ -6,15 +6,12 @@
 
 import Foundation
 
-let dir = FileManager.default.homeDirectoryForCurrentUser.appendingPathComponent(".kube").appendingPathComponent("bk")
-var _target = ""
-var _context = ""
-
 func SearchFiles(target: String, context: String)  {
     _target = target
     _context = context
     CreateBackUpDirectory()
     Makebackup()
+    getconfig()
     Clean()
     SwitcherConfig()
     
@@ -23,12 +20,26 @@ func SearchFiles(target: String, context: String)  {
 func CreateBackUpDirectory(){
     //create directory
     do {
-        try FileManager.default.createDirectory(at: dir, withIntermediateDirectories: true, attributes: nil)
+        try FileManager.default.createDirectory(at: dirbk, withIntermediateDirectories: true, attributes: nil)
     } catch let error as NSError {
         print(error.localizedDescription);
     }
 }
-
+func getconfig ()
+{
+    // list of string
+    //Select confifiles
+    for file in enumerator {
+        if let file = file as? String {
+            if file.contains(configsuffix) {
+                if !file.contains("bk") && !file.contains(".back")
+                {
+                    ConfigFound.append(file)
+                }
+            }
+        }
+    }
+}
 func Makebackup() {
     //date forma date + time
     let date = Date()
@@ -39,7 +50,7 @@ func Makebackup() {
     //copy files .kube to .kube/bk and append _date + time
     for file in ConfigFound {
         let source = kubeconfig.appendingPathComponent(file)
-        let destination = dir.appendingPathComponent(file).appendingPathExtension(result)
+        let destination = dirbk.appendingPathComponent(file).appendingPathExtension(result)
         do {
             try FileManager.default.copyItem(at: source, to: destination)
         } catch let error as NSError {
@@ -77,7 +88,7 @@ func SwitcherConfig() {
     }
 
     if existTarget {
-        let targetfile = "config_"+_target
+        let targetfile = configsuffix+_target
         let source = kubeconfig.appendingPathComponent(targetfile)
         let destination = kubeconfigDir
         do {
