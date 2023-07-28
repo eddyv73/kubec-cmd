@@ -18,8 +18,9 @@ func ArgsController() -> Args {
     if let targetIndex = arguments.firstIndex(of: "-t"), arguments.count > targetIndex + 1 {
         let targetFile = arguments[targetIndex + 1]
         args.target = targetFile
-        print("Argument 1 ↪︎ ", arguments[targetIndex])
-        print("Argument 2 ↪︎ ", arguments[targetIndex + 1])
+        //only for debug
+//        print("Argument 1 ↪︎ ", arguments[targetIndex])
+//        print("Argument 2 ↪︎ ", arguments[targetIndex + 1])
         print("Target found ➥", targetFile)
         SearchFiles(target: args.target, context: args.context)
     }
