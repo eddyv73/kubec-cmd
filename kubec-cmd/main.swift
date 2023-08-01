@@ -15,7 +15,7 @@ var _context = ""
 var ConfigFound = [String]()
 let fileManager = FileManager.default
 let enumerator:FileManager.DirectoryEnumerator = fileManager.enumerator(atPath: kubeconfig.path())!
-PrintInstructions()
+//PrintInstructions()
 
 // Modified to handle both target and context arguments
 let args = ArgsController()
