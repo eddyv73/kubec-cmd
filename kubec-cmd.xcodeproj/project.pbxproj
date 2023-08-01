@@ -14,23 +14,6 @@
 		2FA295C62A7460480002F584 /* KubeConfigList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA295C52A7460480002F584 /* KubeConfigList.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		2F0235892A531F9000A835C2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2F03066E291B0A7E00F3C62C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 2F0235722A531F8F00A835C2;
-			remoteInfo = linux;
-		};
-		2F0235932A531F9000A835C2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2F03066E291B0A7E00F3C62C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 2F0235722A531F8F00A835C2;
-			remoteInfo = linux;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXCopyFilesBuildPhase section */
 		2F030674291B0A7E00F3C62C /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -44,9 +27,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		2F0235732A531F8F00A835C2 /* linux.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = linux.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		2F0235882A531F9000A835C2 /* linuxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = linuxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2F0235922A531F9000A835C2 /* linuxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = linuxUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F030676291B0A7E00F3C62C /* kubec-cmd */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "kubec-cmd"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F030679291B0A7E00F3C62C /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		2F2D0CB629319FE0005FDD2F /* Dirhelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Dirhelper.swift; path = "kubec-cmd/Dirhelper.swift"; sourceTree = "<group>"; };
@@ -56,27 +36,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2F0235702A531F8F00A835C2 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2F0235852A531F9000A835C2 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2F02358F2A531F9000A835C2 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		2F030673291B0A7E00F3C62C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -101,9 +60,6 @@
 			isa = PBXGroup;
 			children = (
 				2F030676291B0A7E00F3C62C /* kubec-cmd */,
-				2F0235732A531F8F00A835C2 /* linux.app */,
-				2F0235882A531F9000A835C2 /* linuxTests.xctest */,
-				2F0235922A531F9000A835C2 /* linuxUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -121,59 +77,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2F0235722A531F8F00A835C2 /* linux */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 2F02359A2A531F9000A835C2 /* Build configuration list for PBXNativeTarget "linux" */;
-			buildPhases = (
-				2F02356F2A531F8F00A835C2 /* Sources */,
-				2F0235702A531F8F00A835C2 /* Frameworks */,
-				2F0235712A531F8F00A835C2 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = linux;
-			productName = linux;
-			productReference = 2F0235732A531F8F00A835C2 /* linux.app */;
-			productType = "com.apple.product-type.application";
-		};
-		2F0235872A531F9000A835C2 /* linuxTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 2F02359D2A531F9000A835C2 /* Build configuration list for PBXNativeTarget "linuxTests" */;
-			buildPhases = (
-				2F0235842A531F9000A835C2 /* Sources */,
-				2F0235852A531F9000A835C2 /* Frameworks */,
-				2F0235862A531F9000A835C2 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				2F02358A2A531F9000A835C2 /* PBXTargetDependency */,
-			);
-			name = linuxTests;
-			productName = linuxTests;
-			productReference = 2F0235882A531F9000A835C2 /* linuxTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		2F0235912A531F9000A835C2 /* linuxUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 2F0235A02A531F9000A835C2 /* Build configuration list for PBXNativeTarget "linuxUITests" */;
-			buildPhases = (
-				2F02358E2A531F9000A835C2 /* Sources */,
-				2F02358F2A531F9000A835C2 /* Frameworks */,
-				2F0235902A531F9000A835C2 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				2F0235942A531F9000A835C2 /* PBXTargetDependency */,
-			);
-			name = linuxUITests;
-			productName = linuxUITests;
-			productReference = 2F0235922A531F9000A835C2 /* linuxUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 		2F030675291B0A7E00F3C62C /* kubec-cmd */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2F03067D291B0A7E00F3C62C /* Build configuration list for PBXNativeTarget "kubec-cmd" */;
@@ -201,17 +104,6 @@
 				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1410;
 				TargetAttributes = {
-					2F0235722A531F8F00A835C2 = {
-						CreatedOnToolsVersion = 14.3.1;
-					};
-					2F0235872A531F9000A835C2 = {
-						CreatedOnToolsVersion = 14.3.1;
-						TestTargetID = 2F0235722A531F8F00A835C2;
-					};
-					2F0235912A531F9000A835C2 = {
-						CreatedOnToolsVersion = 14.3.1;
-						TestTargetID = 2F0235722A531F8F00A835C2;
-					};
 					2F030675291B0A7E00F3C62C = {
 						CreatedOnToolsVersion = 14.1;
 					};
@@ -231,59 +123,11 @@
 			projectRoot = "";
 			targets = (
 				2F030675291B0A7E00F3C62C /* kubec-cmd */,
-				2F0235722A531F8F00A835C2 /* linux */,
-				2F0235872A531F9000A835C2 /* linuxTests */,
-				2F0235912A531F9000A835C2 /* linuxUITests */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXResourcesBuildPhase section */
-		2F0235712A531F8F00A835C2 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2F0235862A531F9000A835C2 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2F0235902A531F9000A835C2 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		2F02356F2A531F8F00A835C2 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2F0235842A531F9000A835C2 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2F02358E2A531F9000A835C2 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		2F030672291B0A7E00F3C62C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -298,186 +142,7 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		2F02358A2A531F9000A835C2 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 2F0235722A531F8F00A835C2 /* linux */;
-			targetProxy = 2F0235892A531F9000A835C2 /* PBXContainerItemProxy */;
-		};
-		2F0235942A531F9000A835C2 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 2F0235722A531F8F00A835C2 /* linux */;
-			targetProxy = 2F0235932A531F9000A835C2 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin XCBuildConfiguration section */
-		2F02359B2A531F9000A835C2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = linux/linux.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"linux/Preview Content\"";
-				DEVELOPMENT_TEAM = 3HC7295HS9;
-				ENABLE_HARDENED_RUNTIME = YES;
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
-				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
-				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
-				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 13.3;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Wister.linux;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		2F02359C2A531F9000A835C2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = linux/linux.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"linux/Preview Content\"";
-				DEVELOPMENT_TEAM = 3HC7295HS9;
-				ENABLE_HARDENED_RUNTIME = YES;
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
-				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
-				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
-				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 13.3;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Wister.linux;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		2F02359E2A531F9000A835C2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 3HC7295HS9;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
-				MACOSX_DEPLOYMENT_TARGET = 13.3;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Wister.linuxTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/linux.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/linux";
-			};
-			name = Debug;
-		};
-		2F02359F2A531F9000A835C2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 3HC7295HS9;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
-				MACOSX_DEPLOYMENT_TARGET = 13.3;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Wister.linuxTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/linux.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/linux";
-			};
-			name = Release;
-		};
-		2F0235A12A531F9000A835C2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 3HC7295HS9;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
-				MACOSX_DEPLOYMENT_TARGET = 13.3;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Wister.linuxUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "watchsimulator watchos macosx iphonesimulator iphoneos driverkit appletvsimulator appletvos";
-				SUPPORTS_MACCATALYST = YES;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = linux;
-			};
-			name = Debug;
-		};
-		2F0235A22A531F9000A835C2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 3HC7295HS9;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
-				MACOSX_DEPLOYMENT_TARGET = 13.3;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Wister.linuxUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "watchsimulator watchos macosx iphonesimulator iphoneos driverkit appletvsimulator appletvos";
-				SUPPORTS_MACCATALYST = YES;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = linux;
-			};
-			name = Release;
-		};
 		2F03067B291B0A7E00F3C62C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -618,33 +283,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2F02359A2A531F9000A835C2 /* Build configuration list for PBXNativeTarget "linux" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2F02359B2A531F9000A835C2 /* Debug */,
-				2F02359C2A531F9000A835C2 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		2F02359D2A531F9000A835C2 /* Build configuration list for PBXNativeTarget "linuxTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2F02359E2A531F9000A835C2 /* Debug */,
-				2F02359F2A531F9000A835C2 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		2F0235A02A531F9000A835C2 /* Build configuration list for PBXNativeTarget "linuxUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2F0235A12A531F9000A835C2 /* Debug */,
-				2F0235A22A531F9000A835C2 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		2F030671291B0A7E00F3C62C /* Build configuration list for PBXProject "kubec-cmd" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
