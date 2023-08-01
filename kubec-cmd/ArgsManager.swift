@@ -14,9 +14,6 @@ struct Args {
 func ArgsController() -> Args {
     var args = Args()
     let arguments = CommandLine.arguments
-//    if !arguments.contains("--list"){
-//        print("lo tengo")
-//    }
     if arguments.count == 1 && !arguments.contains("--list")
     {
         PrintInstructions()
