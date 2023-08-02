@@ -83,7 +83,7 @@ func Clean () {
 func SwitcherConfig() {
     var existTarget = false
     if FileManager.default.fileExists(atPath: kubeconfigDir.path+"_"+_target) {
-        print("File exist")
+        print("File exist ⛴️")
         existTarget = true
     }
 

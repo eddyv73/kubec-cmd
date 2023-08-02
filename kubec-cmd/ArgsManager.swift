@@ -31,14 +31,14 @@ func ArgsController() -> Args {
     else if arguments.contains("--list")
     {
         let files = listfilesinpath()
-        print("List of files in path: ",kubeconfig.path.description)
+        print("List of files in path ⛴️: ",kubeconfig.path.description)
         for file in files {
             print(file)
         }
     }
     else
     {
-        print("No target file found")
+        print("No target file found ⛴️")
         PrintInstructions()
     }
     
