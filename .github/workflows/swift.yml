@@ -22,3 +22,10 @@ jobs:
       with:
         name: kubec-cmd-binary
         path: kubec-cmd.bin
+    - name: xcode
+      uses: sergeysova/xcodebuild-action@v2.1.0
+      with:
+        project: kubec-cmd.xcodeproj
+        scheme: kubec-cmd
+        destination: platform=macOS
+        action: build
